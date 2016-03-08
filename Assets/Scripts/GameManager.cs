@@ -41,8 +41,12 @@ public class GameManager : MonoBehaviour {
 		}
 		if (Input.GetKey (KeyCode.B)) {
 			print ("loading...");
-			foreach (string name in Game.current.objectNames) {
-				print (name);
+			List<string> ls = SaveLoad.gameNames [0];
+			foreach (string name in ls) {
+				if (name != null) {
+					print (name);
+					print ("this is the object name!");
+				}
 			}
 			print (Game.current.test);
 		}
