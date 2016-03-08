@@ -13,7 +13,7 @@ public class Game{ //don't need ": Monobehaviour" because we are not attaching i
 
 	public static Game current;
 	//用于存放物体位置
-	public List<Vector3> objectPositions;
+//	public List<Vector3> objectPositions;
 	//objectStrings 用于存放对应position的物体名称
 	public List<string> objectNames;
 	//test string
@@ -29,8 +29,13 @@ public class Game{ //don't need ": Monobehaviour" because we are not attaching i
 
 	public Game(){
 		//新建列表以plantposition的个数多一个初始化，因为不使用index 0
-		objectNames = new List<string>(PlantPosition.positionCount + 1);
-		objectPositions = new List<Vector3>(PlantPosition.positionCount + 1);
+		//初始化
+		objectNames = new List<string>();
+		for (int i = 0; i != PlantPosition.positionCount + 1; i++) {
+			objectNames.Add (null);
+		}
+//		objectPositions = new List<Vector3>(PlantPosition.positionCount + 1);
+
 		test = "load success.";
 	}
 }

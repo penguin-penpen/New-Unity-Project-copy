@@ -41,10 +41,11 @@ public class PlantPosition : MonoBehaviour {
 //		positionIndex = int.Parse(new string(this.name.Split(' ')[1].Skip(1).TakeWhile(char.IsDigit).ToArray()));
 		positionIndex = int.Parse(mc[0].ToString());
 		//更新
+		print(positionIndex);
 		Game.current.objectNames [positionIndex] = objectChoice.objectName;
-		Game.current.objectPositions [positionIndex] = this.transform.position;
-		print ("name saved is");
-		print (Game.current.objectNames [positionIndex]);
+//		Game.current.objectPositions [positionIndex] = this.transform.position;
+//		print ("name saved is");
+//		print (Game.current.objectNames [positionIndex]);
 //		Game.objectPositions [positionIndex] = this.transform.position;
 //			if(result == true){
 //				totalPlants = totalPlants + 1;

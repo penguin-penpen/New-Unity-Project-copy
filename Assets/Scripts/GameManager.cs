@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 //			
 //		}
 		Game.current = SaveLoad.savedGames [-1];
-		print("current");
+//		print("current");
 //
 //		for (int i = 0; i < 840; i++) {
 //			Game.current = SaveLoad.savedGames [0];
@@ -40,15 +40,21 @@ public class GameManager : MonoBehaviour {
 			SaveLoad.Save ();
 		}
 		if (Input.GetKey (KeyCode.B)) {
-			print ("loading...");
-			List<string> ls = SaveLoad.gameNames [0];
-			foreach (string name in ls) {
+//			print ("loading...");
+//			List<string> ls = SaveLoad.gameNames [0];
+//			foreach (string name in ls) {
+//				if (name != null) {
+//					print (name);
+//					print ("this is the object name!");
+//				}
+//			}
+
+			foreach (string name in Game.current.objectNames) {
 				if (name != null) {
 					print (name);
-					print ("this is the object name!");
 				}
 			}
-			print (Game.current.test);
+//			print (Game.current.test);
 		}
 			
 	}
