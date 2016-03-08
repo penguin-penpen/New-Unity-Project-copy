@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 //		if (File.Exists (Application.persistentDataPath + "/savedGames.gd")) {
 //			
 //		}
-		Game.current = SaveLoad.savedGames [-1];
+		Game.current = SaveLoad.savedGames [1];
 //		print("current");
 //
 //		for (int i = 0; i < 840; i++) {
@@ -52,9 +52,21 @@ public class GameManager : MonoBehaviour {
 			foreach (string name in Game.current.objectNames) {
 				if (name != null) {
 					print (name);
+					print(Game.current.objectNames.IndexOf(name));
 				}
 			}
 //			print (Game.current.test);
+		}
+
+		if (Input.GetKey (KeyCode.I)) {
+			//遍历所有PlantPosition，实例化object
+			for (int i = 1; i <= PlantPosition.positionCount; i++) {
+				if (Game.current.objectNames [i] == "apple") {
+					string plantPosName = "PlantPosition (" + i + ")";
+					GameObject pos = GameObject.Find (plantPosName);
+					Instantiate (apple, pos.transform.position, Quaternion.identity);
+				}
+			}
 		}
 			
 	}
