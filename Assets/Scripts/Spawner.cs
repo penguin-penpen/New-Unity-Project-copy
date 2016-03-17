@@ -5,6 +5,13 @@ using UnityEngine.UI;
 public class Spawner : MonoBehaviour {
 	public Plant prefab;
 	public Plant apple;
+	public Plant death;
+	public Plant timer;
+	public Plant count;
+	public Plant changeSpeed;
+	public Plant backnforth;
+	public Plant ground;
+
 	public Plant pineapple;
 //	private static float timeDelay;
 //	private static bool spawnAllowed;
@@ -49,6 +56,18 @@ public class Spawner : MonoBehaviour {
 			prefab = apple;
 		} else if (name == "pineapple") {
 			prefab = pineapple;
+		} else if (name == "death") {
+			prefab = death;
+		} else if (name == "timer") {
+			prefab = timer;
+		} else if (name == "count") {
+			prefab = count;
+		} else if (name == "changeSpeed") {
+			prefab = changeSpeed;
+		} else if (name == "backnforth") {
+			prefab = backnforth;
+		} else if (name == "ground") {
+			prefab = ground;
 		}
 	}
 }
