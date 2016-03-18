@@ -203,7 +203,13 @@
      <Compile Include="Assets\Scripts\objectChoice.cs" />
      <Compile Include="Assets\Scripts\timerCollider.cs" />
      <Compile Include="Assets\button.cs" />
+     <Compile Include="Assets\down.cs" />
+     <Compile Include="Assets\instructManager.cs" />
+     <Compile Include="Assets\left.cs" />
      <Compile Include="Assets\menu.cs" />
+     <Compile Include="Assets\right.cs" />
+     <Compile Include="Assets\up.cs" />
+     <Compile Include="Assets\win.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.8.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />

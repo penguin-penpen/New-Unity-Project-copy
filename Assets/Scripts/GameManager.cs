@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour {
 //		if (File.Exists (Application.persistentDataPath + "/savedGames.gd")) {
 //			
 //		}
-		Game.current = SaveLoad.savedGames [1];
-//		print("current");
+		Game.current = SaveLoad.savedGames [15];
+		print (SaveLoad.savedGames.Count);
+		print("current");
 //
 //		for (int i = 0; i < 840; i++) {
 //			Game.current = SaveLoad.savedGames [0];
