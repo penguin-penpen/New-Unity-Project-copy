@@ -5,11 +5,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.IO;
 
-
 public static class SaveLoad
 {
 //	public static List<List<string>> gameNames = new List<List<string>> ();
 //	public static List<List<Vector3>> gamePositions = new List<List<Vector3>> ();
+//	private string fullPath;
+
 
 	public static List<Game> savedGames = new List<Game> ();
 			
