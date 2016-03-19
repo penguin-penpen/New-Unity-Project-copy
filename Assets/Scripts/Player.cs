@@ -63,7 +63,13 @@ public class Player : MonoBehaviour {
 
 	}
 
-
+	void OnCollisionEnter(Collider a){
+		print ("collide!!!");
+		if(a.gameObject.tag=="re"){
+			this.gameObject.transform.position.Set (0.3f,4.9f,-0.06f);
+			//			GameManager._intance.GameState = GameManager.GAMESTATE_END;//改变游戏状态
+		}
+	}
 
 }
 

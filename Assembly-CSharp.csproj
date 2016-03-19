@@ -202,6 +202,7 @@
      <Compile Include="Assets\Scripts\moveRight.cs" />
      <Compile Include="Assets\Scripts\objectChoice.cs" />
      <Compile Include="Assets\Scripts\timerCollider.cs" />
+     <Compile Include="Assets\backtomenu.cs" />
      <Compile Include="Assets\button.cs" />
      <Compile Include="Assets\displayTimer.cs" />
      <Compile Include="Assets\down.cs" />
